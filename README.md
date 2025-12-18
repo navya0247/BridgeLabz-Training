@@ -12,8 +12,9 @@ I Have solved ten csharp quetions-
 9.Program to find volume of cylinder
 10.Program to find perimeter of rectangle
 
-I have also learnt about the architecture of csharp and functionalties.
-Intallation of dotnet and how to run code by using notepad++
+In addition, I learned about the architecture of Csharp and its functionalities.
+I also learned the installation of .NET and how to run Csharp code using Notepad++.
+
 
 
 
