@@ -1,6 +1,7 @@
 ﻿# BridgeLabz-Training
 Date-18/12/2025
-I Have solved ten csharp quetions-
+I have successfully solved 10 Csharp programs as part of my learning practice 💻✨
+🧮 Programs Completed-
 1.Program to add two numbers.
 2.Program to find area of circle
 3.Program to find average of three numbers
@@ -12,8 +13,15 @@ I Have solved ten csharp quetions-
 9.Program to find volume of cylinder
 10.Program to find perimeter of rectangle
 
-In addition, I learned about the architecture of Csharp and its functionalities.
-I also learned the installation of .NET and how to run Csharp code using Notepad++.
+📚 Concepts Learned-
+🏗️ Architecture of C#
+⚙️ Core functionalities of C#
+
+Tools & Setup-
+🔧 Installation of .NET
+▶️ Running Csharp programs using Notepad++
+
+
 
 
 
