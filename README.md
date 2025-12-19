@@ -1,5 +1,7 @@
 ﻿# BridgeLabz-Training
-Date-18/12/2025
+📅Date-18/12/2025
+## 📚 Topics Covered
+
 I have successfully solved 10 Csharp programs as part of my learning practice 💻✨
 🧮 Programs Completed-
 1.Program to add two numbers.
@@ -20,6 +22,45 @@ I have successfully solved 10 Csharp programs as part of my learning practice �
 Tools & Setup-
 🔧 Installation of .NET
 ▶️ Running Csharp programs using Notepad++
+
+
+📅 Date-19/12/2025
+## 📚 Topics Covered
+
+### 🔹 C# Fundamentals
+- ✔ Functionalities of C#
+- ✔ Working of C# programs
+- ✔ Basic program structure
+
+### 🔹 Data Types
+- ✔ Value Types (`int`, `float`, `double`, `char`, `bool`)
+- ✔ Type conversion
+
+### 🔹 Operators
+- ✔ Arithmetic Operators
+- ✔ Relational Operators
+- ✔ Logical Operators
+- ✔ Assignment Operators
+
+## 🧪 Practical Implementation
+I have implemented **hands-on C# programs** related to:
+- 🔢 Data Types usage
+- ➕➖✖ Operators
+
+## ☕ Java vs ♯ C# Comparison
+I also studied the **difference between Java and C#**, including:
+- Syntax differences
+- Platform (.NET vs JVM)
+- Compilation & execution
+
+
+
+
+
+
+
+
+
 
 
 
