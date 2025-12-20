@@ -43,15 +43,41 @@ Tools & Setup-
 - ✔ Assignment Operators
 
 ## 🧪 Practical Implementation
-I have implemented **hands-on C# programs** related to:
+I have implemented hands-on C# programs related to:
 - 🔢 Data Types usage
 - ➕➖✖ Operators
 
 ## ☕ Java vs ♯ C# Comparison
-I also studied the **difference between Java and C#**, including:
+I also studied the difference between Java and C#, including:
 - Syntax differences
 - Platform (.NET vs JVM)
 - Compilation & execution
+
+📅 Date-20/12/2025  
+I practiced multiple beginner-level programs in C# such as:  
+- ➕ Arithmetic operations  
+- 🔁 Swapping of two numbers  
+- 🌡️ Temperature conversion programs  
+- 💰 Simple Interest calculation  
+- 🍫 Chocolate distribution problem
+These programs helped me understand user input, operators, calculations , and output formatting
+
+🔐 Learning About Access Modifiers   
+🔓public
+🔒private
+🧬protected
+🏢internal
+🔐protected internal
+I have also practiced programs based on access modifiers in C#. 
+
+
+
+
+
+
+
+
+
 
 
 
