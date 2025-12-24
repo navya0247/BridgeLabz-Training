@@ -70,6 +70,44 @@ These programs helped me understand user input, operators, calculations , and ou
 🔐protected internal
 I have also practiced programs based on access modifiers in C#. 
 
+📅 Date- 22/12/2025 
+## 📚 Topics Covered 
+
+# 🔄 Control Flow Statement
+
+### ✅ Conditional Statements 
+-if
+-if - else
+-else if
+-nested if
+
+### 🔁 Looping Statements 
+- for loop  
+- while loop  
+
+I have practiced several programs using control flow concepts.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
