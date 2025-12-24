@@ -53,7 +53,9 @@ I also studied the difference between Java and C#, including:
 - Platform (.NET vs JVM)
 - Compilation & execution
 
-📅 Date-20/12/2025  
+📅 Date-20/12/2025 
+## 📚 Topics Covered 
+ 
 I practiced multiple beginner-level programs in C# such as:  
 - ➕ Arithmetic operations  
 - 🔁 Swapping of two numbers  
@@ -86,6 +88,30 @@ I have also practiced programs based on access modifiers in C#.
 - while loop  
 
 I have practiced several programs using control flow concepts.
+
+📅Date-23/12/2025
+## 📚 Topics Covered
+
+ 🔹 Array Basics  
+ 🔹 One-Dimensional Array (1D Array)  
+ 🔹 Two-Dimensional Array (2D Array) 
+
+- ✔️ Practiced programs on **arrays**  
+- ✔️ Solved problems using **1D arrays**  
+- ✔️ Solved problems using **2D arrays**
+
+📅Date-24/12/2025
+## 📚 Topics Covered
+
+🔹 Methods (Functions) 
+
+
+
+
+
+
+
+
 
 
 
