@@ -103,7 +103,10 @@ I have practiced several programs using control flow concepts.
 📅Date-24/12/2025
 ## 📚 Topics Covered
 
-🔹 Methods (Functions) 
+🔹 Methods 
+- ✔️Solved problems by using methods
+
+
 
 
 
