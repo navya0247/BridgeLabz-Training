@@ -116,7 +116,21 @@ I have practiced several programs using control flow concepts.
 📅Date-29/12/2025
 ## 📚 Topics Covered
 
-- ✔️ Solved scenario based problems.
+✔️ Understood the concepts of Object-Oriented Programming (OOP), including classes and objects
+✔️ Solved three real-world scenario-based problems.
+
+
+
+
+📅Date-30/12/2025
+## 📚 Topics Covered
+
+- ✔️ Understood constructors and their role in object initialization
+- ✔️ Learned the difference between instance variables and class (static) variables
+- ✔️ Solved two real-world scenario-based problems
+
+
+
 
 
 
