@@ -106,6 +106,32 @@ I have practiced several programs using control flow concepts.
 🔹 Methods 
 - ✔️Solved problems by using methods
 
+📅Date-26/12/2025
+## 📚 Topics Covered
+
+🔤 String Concepts 
+- ✔️ Solved string problems using built-in functions as well as without built-in functions.
+
+
+📅Date-29/12/2025
+## 📚 Topics Covered
+
+- ✔️ Solved scenario based problems.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
