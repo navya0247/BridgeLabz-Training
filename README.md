@@ -79,8 +79,9 @@
 ## 📚 Topics Covered
 ---
 
-✔️ Gained a clear understanding of polymorphism, encapsulation, and abstraction.
+✔️ Gained a clear understanding of polymorphism, encapsulation, and abstraction
 ✔️ Applied these OOP concepts by solving a real-world, scenario-based problem.
+
 
 
 
