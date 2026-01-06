@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -77,4 +77,4 @@ class HospitalManagement
         Ipayable bill = new Bill(8000.00);
         Console.WriteLine($"Total Bill Amount: {bill.CalculateBill()}");
     }
-}
+}*/
