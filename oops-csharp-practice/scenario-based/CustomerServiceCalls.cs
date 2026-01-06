@@ -84,7 +84,7 @@ namespace BridgeLabzTraining.oops.scenarioBased
     }
 
     // main class
-    internal class CustomerServiceCall
+    internal class CustomerServiceCalls
     {
         public static void Main(string[] args)
         {
