@@ -83,6 +83,17 @@
 ✔️ Applied these OOP concepts by solving a real-world, scenario-based problem.
 
 
+📅 **Date:** 06/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Applied the OOP concepts by solving a real-world, scenario-based problem.
+
+
+
+
 
 
 
