@@ -93,6 +93,40 @@
 
 
 
+📅 **Date:** 07/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Applied OOP concepts by solving a real-world, scenario-based problem
+✔️ Learned the proper structure to approach and solve scenario-based problems effectively.
+
+
+📅 **Date:** 08/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Applied OOP concepts by solving a real-world, scenario-based problem.
+
+
+📅 **Date:** 09/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Applied OOP concepts by solving a real-world, scenario-based problem.
+
+
+
+
+
+
+
+
 
 
 
