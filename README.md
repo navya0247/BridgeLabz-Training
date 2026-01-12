@@ -121,6 +121,29 @@
 ✔️ Applied OOP concepts by solving a real-world, scenario-based problem.
 
 
+📅 **Date:** 12/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️Solved three scenario based quetions :-
+
+✔️ First one is Custom Furniture Manufacturing, where the task focused on optimizing wooden rod cutting for furniture. It involved determining the best cut to maximize earnings for a 12 ft rod, applying a fixed waste constraint given by the customer, and suggesting cuts that balance maximum revenue with minimal waste.
+
+
+✔️ Second one is Metal Factory Pipe Cutting, which focused on maximizing revenue from cutting metal rods. The scenarios included identifying the best cutting strategy for a rod of length 8 using a given price chart, analyzing the impact of a custom-length order on overall revenue, and comparing optimized versus non-optimized cutting strategies to observe revenue differences.
+
+✔️ Third one is LoanBuddy – Loan Approval Automation, which involved designing a backend loan approval engine for a fintech application. The task focused on collecting applicant details, verifying eligibility, automating loan approval decisions using custom rules, calculating EMIs, and generating personalized repayment plans.
+
+
+
+
+
+
+
+
+
 
 
 
