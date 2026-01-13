@@ -1,14 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace BridgeLabzTraining.oops.scenarioBased.movieScheduleManager
 {
     internal class MovieMenu
     {
-        public static void ShowMenu(MovieUtility utility)
+        public void ShowMenu()
         {
+            MovieUtility utility = new MovieUtility();  
             while (true)  
             {
-                Console.WriteLine("\nCinemaTime Menu");
+                Console.WriteLine("\nCinemaTime ");
                 Console.WriteLine("1. Add Movie");
                 Console.WriteLine("2. Search Movie");
                 Console.WriteLine("3. Display All Movies");
@@ -34,7 +37,7 @@ namespace BridgeLabzTraining.oops.scenarioBased.movieScheduleManager
 
                     case 4:
                         Console.WriteLine("Exiting CinemaTime...");
-                        return;  
+                        break;  
 
                     default:
                         Console.WriteLine("Invalid choice.");

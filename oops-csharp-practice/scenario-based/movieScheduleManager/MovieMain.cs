@@ -8,9 +8,9 @@ namespace BridgeLabzTraining.oops.scenarioBased.movieScheduleManager
     {
         public static void Main(string[] args)
         {
-            MovieUtility utility = new MovieUtility();
+            MovieMenu utility = new MovieMenu();
 
-            MovieMenu.ShowMenu(utility);
+             utility.ShowMenu();
         }
     }
 }
