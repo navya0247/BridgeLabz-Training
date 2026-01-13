@@ -160,19 +160,20 @@ Manages movie titles and showtimes
 
 Allows add, view, and search movies
 Methods:
-addMovie(title, time)
-searchMovie(keyword) using String.contains()
-displayAllMovies()
+addMovie(title, time) ,
+searchMovie(keyword) using String.contains() ,
+displayAllMovies() ,
 Displays movies using formatted strings.
 
 📚 BookBuddy – Digital Bookshelf App
-Maintains a digital bookshelf of favorite books
+Maintains a digital bookshelf of favorite books ,
 Stores books in "Title - Author" format
 
 Features:
-addBook(title, author)
-sortBooksAlphabetically()
+addBook(title, author) ,
+sortBooksAlphabetically() ,
 searchByAuthor(author)
+
 
 
 
