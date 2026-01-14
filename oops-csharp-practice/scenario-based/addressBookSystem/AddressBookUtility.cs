@@ -74,6 +74,34 @@ namespace BridgeLabzTraining.oops.scenarioBased.addressBookSystem
             Console.WriteLine("Contact not found.");
         }
 
+        // UC4: Delete existing contact
+        public void DeleteContact()
+        {
+            Console.Write("Enter Full Name to Delete: ");
+            string name = Console.ReadLine();
+
+            for (int i = 0; i < count; i++)
+            {
+                if (contacts[i].GetFullName().Equals(name))
+                {
+                    // Shift elements to left
+                    for (int j = i; j < count - 1; j++)
+                    {
+                        contacts[j] = contacts[j + 1];
+                    }
+
+                    contacts[count - 1] = null; 
+                    count--;
+
+                    Console.WriteLine("Contact deleted successfully.");
+                    return;
+                }
+            }
+
+            Console.WriteLine("Contact not found.");
+        }
+
+
 
     }
 }
