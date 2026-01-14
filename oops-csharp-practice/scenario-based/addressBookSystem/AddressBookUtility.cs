@@ -47,5 +47,33 @@ namespace BridgeLabzTraining.oops.scenarioBased.addressBookSystem
             Console.WriteLine("Contact added.");
         }
 
+        // UC3: Edit existing contact
+        public void EditContact()
+        {
+            Console.Write("Enter Full Name to Edit: ");
+            string name = Console.ReadLine();
+
+            for (int i = 0; i < count; i++)
+            {
+                if (contacts[i].GetFullName().Equals(name))
+                {
+                    Console.Write("Enter new City: ");
+                    contacts[i].City = Console.ReadLine();
+
+                    Console.Write("Enter new State: ");
+                    contacts[i].State = Console.ReadLine();
+
+                    Console.WriteLine("\nContact updated successfully.");
+                    Console.WriteLine("Updated Contact Details:");
+                    Console.WriteLine(contacts[i]);  
+
+                    return;
+                }
+            }
+
+            Console.WriteLine("Contact not found.");
+        }
+
+
     }
 }
