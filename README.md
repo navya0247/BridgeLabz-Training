@@ -12,6 +12,7 @@
 
 ---
 
+
 📅 **Date:** 30/12/2025  
 ---
 
@@ -23,6 +24,7 @@
 ✔️ Solved two real-world scenario-based problems  
 
 ---
+
 
 📅 **Date:** 31/12/2025  
 ---
@@ -36,6 +38,7 @@
 
 ---
 
+
 📅 **Date:** 01/01/2026  
 ---
 
@@ -48,6 +51,7 @@
 
 ---
 
+
 📅 **Date:** 02/01/2026  
 ---
 
@@ -58,6 +62,7 @@
 ✔️ Solved two real-world scenario-based problems  
 
 ---
+
 
 📅 **Date:** 03/01/2026  
 ---
@@ -73,6 +78,7 @@
 
 ---
 
+
 📅 **Date:** 05/01/2026  
 ---
 
@@ -81,6 +87,7 @@
 
 ✔️ Gained a clear understanding of polymorphism, encapsulation, and abstraction
 ✔️ Applied these OOP concepts by solving a real-world, scenario-based problem.
+
 
 
 📅 **Date:** 06/01/2026  
@@ -101,6 +108,7 @@
 
 ✔️ Applied OOP concepts by solving a real-world, scenario-based problem
 ✔️ Learned the proper structure to approach and solve scenario-based problems effectively.
+
 
 
 📅 **Date:** 08/01/2026  
@@ -135,6 +143,43 @@
 ✔️ Second one is Metal Factory Pipe Cutting, which focused on maximizing revenue from cutting metal rods. The scenarios included identifying the best cutting strategy for a rod of length 8 using a given price chart, analyzing the impact of a custom-length order on overall revenue, and comparing optimized versus non-optimized cutting strategies to observe revenue differences.
 
 ✔️ Third one is LoanBuddy – Loan Approval Automation, which involved designing a backend loan approval engine for a fintech application. The task focused on collecting applicant details, verifying eligibility, automating loan approval decisions using custom rules, calculating EMIs, and generating personalized repayment plans.
+
+
+
+📅 **Date:** 13/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️Solved two scenario based quetions :-
+
+🎬 CinemaTime – Movie Schedule Manager
+
+Manages movie titles and showtimes
+
+Allows add, view, and search movies
+Methods:
+addMovie(title, time) ,
+searchMovie(keyword) using String.contains() ,
+displayAllMovies() ,
+Displays movies using formatted strings.
+
+📚 BookBuddy – Digital Bookshelf App
+Maintains a digital bookshelf of favorite books ,
+Stores books in "Title - Author" format
+
+Features:
+addBook(title, author) ,
+sortBooksAlphabetically() ,
+searchByAuthor(author)
+
+
+
+
+
+
+
 
 
 
