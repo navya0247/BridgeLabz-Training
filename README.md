@@ -186,7 +186,41 @@ searchByAuthor(author).
 📒 Address Book System
 ✔️Created an encapsulated Contact model to securely store and manage personal contact details.
 ✔️Implemented features to add, edit, delete,  contacts using an array-based approach.
-✔️Used interfaces and a menu-driven design .
+
+
+📅 **Date:** 15/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Enhanced the Address Book System with advanced features 
+
+📒 Address Book System – Extended Implementation
+
+✔️ Added support for multiple address books, enabling users to create and manage separate contact groups such as Personal or Professional.
+
+✔️ Developed search functionality to locate contacts based on City or State.
+
+✔️ Implemented view functionality to display all contacts belonging to a specific City or State.
+
+✔️ Added counting functionality to determine the number of contacts in a given City or State.
+
+✔️ Implemented sorting by person name using an array-based sorting algorithm, without using collection frameworks.
+
+✔️ Followed Object-Oriented Programming principles, including:
+
+Encapsulation through well-defined models.
+
+Abstraction using interfaces.
+
+Clear separation of concerns across menu and  utility.
+
+
+
+
+
+
 
 
 
