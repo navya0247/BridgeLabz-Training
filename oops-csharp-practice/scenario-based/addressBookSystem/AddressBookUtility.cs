@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -295,12 +295,10 @@ namespace BridgeLabzTraining.oops.scenarioBased.addressBookSystem
             {
                 Console.WriteLine(contacts[i]);
             }
-        }
-
-        
+        }       
 
     }
-}
+}*/
 
 
 
