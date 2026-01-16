@@ -86,12 +86,13 @@ namespace BridgeLabzTraining.oops.scenarioBased.addressBookSystem
                 return FirstName + " " + LastName;
             }
 
-            public override string ToString()
-            {
-                return $"Name: {FirstName} {LastName}, Address: {Address}, City: {City}, State: {State}, Zip: {Zip}," +
-                $" Phone: {Phone}, Email: {Email}";
-            }
+        public override string ToString()
+        {
+            return $"Name    : {FirstName} {LastName}\n" + $"Address : {Address}\n" + $"City    : {City}\n" + $"State   : {State}\n" +
+                $"Zip     : {Zip}\n" + $"Phone   : {Phone}\n" + $"Email   : {Email}\n";
+              
         }
+    }
     }
 
 
