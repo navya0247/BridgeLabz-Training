@@ -172,7 +172,25 @@ Stores books in "Title - Author" format
 Features:
 addBook(title, author) ,
 sortBooksAlphabetically() ,
-searchByAuthor(author)
+searchByAuthor(author).
+
+
+📅 **Date:** 14/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️Solved one scenario based quetions :-
+
+📒 Address Book System
+✔️Created an encapsulated Contact model to securely store and manage personal contact details.
+✔️Implemented features to add, edit, delete,  contacts using an array-based approach.
+✔️Used interfaces and a menu-driven design .
+
+
+
+
 
 
 
