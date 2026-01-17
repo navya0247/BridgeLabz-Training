@@ -29,5 +29,141 @@
 
 
 
+📅 **Date:** 12/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Learned about Linear Search
+
+✔️ Learned about Binary Search
+
+✔️ Learned about StringBuilder
+
+✔️ Learned about StringBuffer.
+
+
+
+📅 **Date:** 13/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Learned about Time Complexity Analysis.
+
+✔️ Learned about Space Complexity Analysis.
+
+
+
+📅 **Date:** 15/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Solved one scenario-based problem
+
+✔️ 🧭 BrowserBuddy – Tab History Manager 
+
+Program Functionality & Key Features:
+
+🔹 Manages browser tab history using a Doubly Linked List.
+
+🔹 Supports Back and Forward navigation efficiently.
+
+🔹 Stores recently closed tabs using a Stack.
+
+🔹 Allows restoring the last closed tab.
+
+🔹 Demonstrates practical use of DSA and OOPS concepts.
+
+
+
+📅 **Date:** 16/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Solved two scenario-based problem
+
+✔️ 🚦 TrafficManager – Roundabout Vehicle Flow
+Program Functionality & Key Features:
+
+🔹 Simulates a traffic roundabout using a Circular Linked List.
+
+🔹 Represents each vehicle as a node in the circular path.
+
+🔹 Manages incoming vehicles using a Queue.
+
+🔹 Handles queue overflow and underflow conditions.
+
+🔹 Supports adding and removing vehicles dynamically.
+
+---
+
+✔️ 📚 BookShelf – Library Organization System
+Program Functionality & Key Features:
+
+🔹 Maintains a genre-wise book catalog.
+
+🔹 Uses a HashMap to map Genre → List of Books.
+
+🔹 Uses LinkedList for efficient insertion and deletion of books.
+
+🔹 Dynamically updates the catalog when books are borrowed or returned.
+
+
+📅 **Date:** 17/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Solved two scenario-based problems using DSA concepts and Core C#
+
+✔️ ⚡ FlashDealz – Product Sorting by Discount 
+Program Functionality & Key Features:
+
+🔹 Sorts a large list of products based on discount percentage.
+
+🔹 Uses Quick Sort for fast average-case performance.
+
+🔹 Demonstrates practical use of divide-and-conquer algorithms.
+
+Concepts Used:
+
+Quick Sort
+
+---
+
+✔️ 🏃 FitnessTracker – Daily Step Count Ranking 
+Program Functionality & Key Features:
+
+🔹 Maintains daily step counts for a small group of users.
+
+🔹 Generates a ranked leaderboard based on steps.
+
+🔹 Uses Bubble Sort, suitable for small datasets.
+
+🔹 Supports frequent updates due to real-time step syncing.
+
+
+Concepts Used:
+
+Bubble Sort
+
+Frequent updates
+
+
+
+
+
+
+
+
+
 
 
