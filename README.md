@@ -67,6 +67,7 @@
 
 ✔️ 🧭 BrowserBuddy – Tab History Manager 
 
+
 Program Functionality & Key Features:
 
 🔹 Manages browser tab history using a Doubly Linked List.
@@ -90,6 +91,8 @@ Program Functionality & Key Features:
 ✔️ Solved two scenario-based problem
 
 ✔️ 🚦 TrafficManager – Roundabout Vehicle Flow
+
+
 Program Functionality & Key Features:
 
 🔹 Simulates a traffic roundabout using a Circular Linked List.
@@ -105,6 +108,8 @@ Program Functionality & Key Features:
 ---
 
 ✔️ 📚 BookShelf – Library Organization System
+
+
 Program Functionality & Key Features:
 
 🔹 Maintains a genre-wise book catalog.
@@ -125,6 +130,8 @@ Program Functionality & Key Features:
 ✔️ Solved two scenario-based problems using DSA concepts and Core C#
 
 ✔️ ⚡ FlashDealz – Product Sorting by Discount 
+
+
 Program Functionality & Key Features:
 
 🔹 Sorts a large list of products based on discount percentage.
@@ -140,6 +147,8 @@ Quick Sort
 ---
 
 ✔️ 🏃 FitnessTracker – Daily Step Count Ranking 
+
+
 Program Functionality & Key Features:
 
 🔹 Maintains daily step counts for a small group of users.
@@ -156,6 +165,7 @@ Concepts Used:
 Bubble Sort
 
 Frequent updates
+
 
 
 
