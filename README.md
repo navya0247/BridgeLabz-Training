@@ -168,6 +168,83 @@ Frequent updates
 
 
 
+📅 **Date:** 19/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Solved two scenario-based problems using DSA concepts and Core C#
+
+✔️ 📦 ParcelTracker – Delivery Chain Management
+
+
+Program Functionality & Key Features:
+
+🔹 Tracks parcel delivery stages such as Packed → Shipped → In Transit → Delivered using a Singly Linked List.
+
+🔹 Allows forward traversal to monitor parcel progress through each delivery stage.
+
+🔹 Supports adding custom intermediate checkpoints dynamically in the delivery chain.
+
+
+Concepts Used:
+
+🔹 Singly Linked List
+
+---
+
+✔️ 📝 ExamProctor – Online Exam Review System
+
+Program Functionality & Key Features:
+
+🔹 Tracks student question navigation using a Stack (last visited question first).
+
+🔹 Stores student answers using a HashMap with questionID.
+
+🔹 Supports backward review of questions using stack operations.
+
+
+Concepts Used:
+
+🔹 Stack
+🔹 HashMap
+🔹 Functions.
+
+
+📅 **Date:** 20/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Solved one scenario-based problems using DSA concepts and Core C#
+
+✔️ 🆔 Sorting Aadhar Numbers using Radix Sort
+
+Context:
+Aadhar numbers (12-digit) need to be sorted efficiently due to their large size.
+
+Program Functionality & Key Features:
+
+🔹 Sorts all Aadhar numbers in ascending order using Radix Sort.
+
+🔹 Enables binary search to find a specific Aadhar number after sorting.
+
+🔹 Maintains the relative order of entries with the same prefix using the stable nature of Radix Sort.
+
+Concepts Used:
+
+🔹 Radix Sort
+🔹 Binary Search
+
+
+
+
+
+
+
+
 
 
 
