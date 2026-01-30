@@ -218,7 +218,7 @@ Concepts Used:
 ## 📚 Topics Covered
 ---
 
-✔️ Solved one scenario-based problems using DSA concepts and Core C#
+✔️ Solved Two scenario-based problems using DSA concepts and Core C#
 
 ✔️ 🆔 Sorting Aadhar Numbers using Radix Sort
 
@@ -237,6 +237,53 @@ Concepts Used:
 
 🔹 Radix Sort
 🔹 Binary Search
+
+---
+
+✔️🔐 Project: Password Cracker Simulator
+
+⚙️ Program Functionality & Key Features
+
+🔹 Generates all possible strings of length n using a given set of characters
+
+🔹 Uses Backtracking to explore each possible combination
+
+🔹 Stops early when the correct password is found.
+
+🧠 Concepts Used:
+🔹 Backtracking
+
+
+📅 **Date:** 21/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Solved a scenario-based problem using DSA (Merge Sort) and Core C#
+
+✔️ 🎓 EduResults – Rank Sheet Generator
+
+📌 Story Context
+An educational board collects marks of thousands of students from different districts.
+
+Each district sends a sorted list of students based on marks.
+
+
+⚙️ Program Functionality & Key Features
+
+🔹 Accepts multiple district-wise sorted student lists
+
+🔹 Merges all lists into one final sorted rank list
+
+🔹 Uses Merge Sort algorithm for efficiency
+
+🔹 Maintains stable sorting — students with the same marks keep their original order
+
+🔹 Works efficiently even for large datasets.
+
+
+
 
 
 
