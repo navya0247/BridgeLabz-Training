@@ -30,7 +30,8 @@ Handling large structured datasets (like student records, reports, logs).
 ## 📚 Topics Covered
 ---
 
-✔️ Learned about  json data
+✔️ Learned JSON Data Handling in C#
+
 
 
 
