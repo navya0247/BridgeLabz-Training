@@ -171,7 +171,7 @@ Importance of automated testing in software development.
 ---
 
 
-✔️ Solved two scenario-based real-world design problems
+✔️ Solved two scenario-based real-world design problems🧠
 
 🏥 HealthCheckPro
 
@@ -237,6 +237,11 @@ Converting string data into appropriate data types
 Handling large structured datasets (like student records, reports, logs).
 
 
+✔️ Solved scenario-based questions 🧠
+➡️ Implemented validations for a bank account system 🏦
+➡️ Covered different test cases 🧪 to verify correctness and handle edge cases.
+
+
 
 📅 **Date:** 29/01/2026  
 ---
@@ -245,6 +250,65 @@ Handling large structured datasets (like student records, reports, logs).
 ---
 
 ✔️ Learned JSON Data Handling in C#
+
+✔️ Solved scenario-based questions 🧠
+
+🌊 Worked on an Ocean Fleet scenario 🚢 
+
+
+
+
+📅 **Date:** 30/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Solved a scenario-based question 🧠
+
+✔️ Worked on a Lexical Twist🔤  concept to improve understanding of string manipulation and pattern handling.
+
+
+
+📅 **Date:** 02/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Learned about Design Principles 🧩
+✔️ Explored various Design Patterns 🏗️
+✔️ Studied Multithreading 🧵 for handling multiple tasks efficiently.
+
+
+📅 **Date:** 03/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Solved a scenario-based question 🧠
+
+✔️ Factory Robot Hazard Analyzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
