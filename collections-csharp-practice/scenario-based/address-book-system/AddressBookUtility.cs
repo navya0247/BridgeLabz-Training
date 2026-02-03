@@ -6,161 +6,186 @@ namespace AddressBookSystem
 {
     internal class AddressBookUtility : IAddressBook
     {
-        // List to store all contacts
+        // List to store contacts in current address book
         private List<Contact> contacts = new List<Contact>();
 
-        // List to store address book names
+        // Static list to store all address book names
         private static List<string> bookNames = new List<string>();
 
-        // Create new address book
+        // Create a new address book
         public static void CreateAddressBook()
         {
-            Console.Write("Enter Address Book Name: ");
-            string name = Console.ReadLine();
-
-            if (bookNames.Contains(name))
+            try
             {
-                Console.WriteLine("Address Book already exists!");
-                return;
-            }
+                Console.Write("Enter Address Book Name: ");
+                string name = Console.ReadLine();
 
-            bookNames.Add(name); // store book name
-            Console.WriteLine("Address Book '" + name + "' created!");
-            Console.WriteLine("Total Address Books: " + bookNames.Count);
+                // Check for empty name
+                if (string.IsNullOrWhiteSpace(name))
+                    throw new Exception("Book name cannot be empty!");
+
+                // Check for duplicate address book
+                if (bookNames.Contains(name))
+                    throw new Exception("Address Book already exists!");
+
+                bookNames.Add(name); // Add new book name
+                Console.WriteLine("Address Book created!");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
         }
 
-        // Select address book
+        // Select an existing address book
         public static AddressBookUtility SelectAddressBook()
         {
-            Console.Write("Enter Address Book Name: ");
-            string name = Console.ReadLine();
+            try
+            {
+                Console.Write("Enter Address Book Name: ");
+                string name = Console.ReadLine();
 
-            if (bookNames.Contains(name))
-            {
-                Console.WriteLine("Address Book '" + name + "' selected!");
-                return new AddressBookUtility(); // new contact list
+                // Check if book exists
+                if (!bookNames.Contains(name))
+                    throw new Exception("Address Book not found!");
+
+                Console.WriteLine("Address Book selected!");
+                return new AddressBookUtility(); // Return new instance
             }
-            else
+            catch (Exception ex)
             {
-                Console.WriteLine("Address Book not found!");
+                Console.WriteLine("Error: " + ex.Message);
                 return null;
             }
         }
 
-        // Add a new contact
+        // Add a single contact
         public void AddContact()
         {
-            Console.Write("First Name: ");
-            string fname = Console.ReadLine();
-
-            // check duplicate by first name
-            if (contacts.Any(c => c.FirstName.Equals(fname, StringComparison.OrdinalIgnoreCase)))
+            try
             {
-                Console.WriteLine("Duplicate contact!");
-                return;
+                Console.Write("First Name: ");
+                string fname = Console.ReadLine();
+
+                // Validate first name
+                if (string.IsNullOrWhiteSpace(fname))
+                    throw new Exception("First name cannot be empty!");
+
+                // Check duplicate contact by first name
+                if (contacts.Any(c => c.FirstName.Equals(fname, StringComparison.OrdinalIgnoreCase)))
+                    throw new Exception("Duplicate contact!");
+
+                Console.Write("Last Name: ");
+                string lname = Console.ReadLine();
+
+                Console.Write("City: ");
+                string city = Console.ReadLine();
+
+                Console.Write("State: ");
+                string state = Console.ReadLine();
+
+                Console.Write("Phone: ");
+                string phone = Console.ReadLine();
+
+                // Validate phone number digits only
+                if (!phone.All(char.IsDigit))
+                    throw new Exception("Phone must be numeric!");
+
+                // Create contact object
+                Contact contact = new Contact(fname, lname, "", city, state, "", phone, "");
+                contacts.Add(contact); // Add to list
+
+                Console.WriteLine("Contact added!");
             }
-
-            Console.Write("Last Name: ");
-            string lname = Console.ReadLine();
-
-            Console.Write("Address: ");
-            string address = Console.ReadLine();
-
-            Console.Write("City: ");
-            string city = Console.ReadLine();
-
-            Console.Write("State: ");
-            string state = Console.ReadLine();
-
-            Console.Write("Zip: ");
-            string zip = Console.ReadLine();
-
-            Console.Write("Phone: ");
-            string phone = Console.ReadLine();
-
-            Console.Write("Email: ");
-            string email = Console.ReadLine();
-
-            Contact contact = new Contact(fname, lname, address, city, state, zip, phone, email);
-
-            contacts.Add(contact); // add to list
-            Console.WriteLine("Contact added!");
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
         }
 
         // Edit existing contact
         public void EditContact()
         {
-            Console.Write("Enter First Name to edit: ");
-            string name = Console.ReadLine();
-
-            Contact contact = contacts.FirstOrDefault(c => c.FirstName.Equals(name, StringComparison.OrdinalIgnoreCase));
-
-            if (contact == null)
+            try
             {
-                Console.WriteLine("Contact not found!");
-                return;
+                Console.Write("Enter First Name to edit: ");
+                string name = Console.ReadLine();
+
+                // Find contact
+                Contact contact = contacts.FirstOrDefault(c => c.FirstName.Equals(name, StringComparison.OrdinalIgnoreCase));
+
+                if (contact == null)
+                    throw new Exception("Contact not found!");
+
+                Console.Write("New City: ");
+                contact.City = Console.ReadLine(); // Update city
+
+                Console.WriteLine("Contact updated!");
             }
-
-            Console.Write("New City: ");
-            contact.City = Console.ReadLine();
-
-            Console.Write("New State: ");
-            contact.State = Console.ReadLine();
-
-            Console.WriteLine("Contact updated!");
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
         }
 
-        // Delete contact
+        // Delete a contact
         public void DeleteContact()
         {
-            Console.Write("Enter First Name to delete: ");
-            string name = Console.ReadLine();
-
-            Contact contact = contacts.FirstOrDefault(c => c.FirstName.Equals(name, StringComparison.OrdinalIgnoreCase));
-
-            if (contact == null)
+            try
             {
-                Console.WriteLine("Contact not found!");
-                return;
-            }
+                Console.Write("Enter First Name to delete: ");
+                string name = Console.ReadLine();
 
-            contacts.Remove(contact); // remove from list
-            Console.WriteLine("Contact deleted!");
+                // Find contact
+                Contact contact = contacts.FirstOrDefault(c => c.FirstName.Equals(name, StringComparison.OrdinalIgnoreCase));
+
+                if (contact == null)
+                    throw new Exception("Contact not found!");
+
+                contacts.Remove(contact); // Remove contact
+                Console.WriteLine("Contact deleted!");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
         }
 
-        // Add multiple contacts
+        // Add multiple contacts in loop
         public void AddMultipleContacts()
         {
             char choice;
-
             do
             {
-                AddContact(); // call add method
-                Console.Write("Add another contact? (y/n): ");
+                AddContact(); // Call add method
+                Console.Write("Add another? (y/n): ");
                 choice = Convert.ToChar(Console.ReadLine());
-            }
-            while (choice == 'y' || choice == 'Y');
+            } while (choice == 'y' || choice == 'Y');
         }
 
-        // Search by city/state
-        public void SearchByCityOrState()
-        {
-            ViewPersonsByCityOrState();
-        }
+        public void SearchByCityOrState() => ViewPersonsByCityOrState();
 
         // View contacts by city
         public void ViewPersonsByCityOrState()
         {
-            Console.Write("Enter City: ");
-            string city = Console.ReadLine();
+            try
+            {
+                Console.Write("Enter City: ");
+                string city = Console.ReadLine();
 
-            var result = contacts.Where(c => c.City.Equals(city, StringComparison.OrdinalIgnoreCase));
+                // Filter contacts by city
+                var result = contacts.Where(c => c.City.Equals(city, StringComparison.OrdinalIgnoreCase));
 
-            foreach (var c in result)
-                Console.WriteLine(c);
+                if (!result.Any())
+                    throw new Exception("No contacts found!");
 
-            if (!result.Any())
-                Console.WriteLine("No contacts found!");
+                foreach (var c in result)
+                    Console.WriteLine(c); // Display contact
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
         }
 
         // Count contacts in a city
@@ -170,10 +195,10 @@ namespace AddressBookSystem
             string city = Console.ReadLine();
 
             int count = contacts.Count(c => c.City.Equals(city, StringComparison.OrdinalIgnoreCase));
-            Console.WriteLine("Total contacts in " + city + ": " + count);
+            Console.WriteLine("Total contacts: " + count);
         }
 
-        // Sort contacts by first name
+        // Sort contacts alphabetically by first name
         public void SortContactsByName()
         {
             contacts = contacts.OrderBy(c => c.FirstName).ToList();
