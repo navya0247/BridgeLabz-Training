@@ -7,7 +7,20 @@
 ## 📚 Topics Covered
 ---
 
-✔️ Learned about csv data handling
+✔️ Learned CSV Data Handling in C#
+
+## Key Learnings:
+
+Reading data from CSV (Comma-Separated Values) files
+
+Writing data into CSV files
+
+Using StreamReader and StreamWriter for file operations
+
+Converting string data into appropriate data types
+
+Handling large structured datasets (like student records, reports, logs).
+
 
 
 
@@ -18,6 +31,7 @@
 ---
 
 ✔️ Learned about  json data
+
 
 
 
