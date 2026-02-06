@@ -1,6 +1,0 @@
-# Ignore OneNote files
-*.onetoc2
-*.one
-
-# Ignore unwanted folders
-dsa-csharp-practice/
