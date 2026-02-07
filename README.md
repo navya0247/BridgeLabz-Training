@@ -234,9 +234,11 @@ User action metadata
 ## 📚 Topics Covered
 ---
 
-✔️ Solved scenario-based questions 🧠
+✔️ Solved two scenario-based questions 🧠
 
-🌊 Worked on an Ocean Fleet scenario 🚢 
+🌊 Worked on an Ocean Fleet scenario 🚢
+
+📡 Practiced the Stream Buzz problem .
 
 
 
@@ -263,6 +265,12 @@ User action metadata
 ✔️ Explored various Design Patterns 🏗️
 ✔️ Studied Multithreading 🧵 for handling multiple tasks efficiently.
 
+✔️ Solved a scenario-based question 🧠
+
+🔑 Worked on the Flip-Key problem .
+
+
+
 
 📅 **Date:** 03/01/2026  
 ---
@@ -277,6 +285,13 @@ User action metadata
 
 
 
+📅 **Date:** 04/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️Learned about DBMS. 
 
 
 
