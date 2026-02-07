@@ -12,6 +12,16 @@ namespace AddressBookSystem{
 
             void SortContactsByName();   // UC-11
 
+            void SortContactsByCity();  //UC-12
+            void SortContactsByState();  //UC-12
+            void SortContactsByZip();    //UC-12
+
+
+            void WriteContactsToFile();  //UC-13
+            void ReadContactsFromFile();  //UC-13
+
+
+
     }
 }
 
