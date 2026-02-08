@@ -294,6 +294,32 @@ User action metadata
 ✔️Learned about DBMS. 
 
 
+📅 **Date:** 05/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+## Code Quality Analysis of event tracker
+
+This project was analyzed using SonarQube.
+
+Steps performed:
+- Started SonarQube using Docker
+- Generated project token
+- Ran analysis using:
+  dotnet sonarscanner begin ...
+  dotnet build
+  dotnet sonarscanner end ...
+
+Quality Gate: PASSED
+Bugs: 0
+Vulnerabilities: 0
+Security Hotspots: 0
+
+
+
+
 
 
 
