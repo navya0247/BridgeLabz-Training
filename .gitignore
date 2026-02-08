@@ -26,3 +26,5 @@ obj/
 # ===============================
 Thumbs.db
 .DS_Store
+
+DBConnect/
