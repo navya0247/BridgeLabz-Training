@@ -223,6 +223,9 @@ I have practiced several programs using control flow concepts.
 ✔️ Applied OOP concepts by solving a real-world, scenario-based problem
 ✔️ Learned the proper structure to approach and solve scenario-based problems effectively.
 
+✔️ Learned about data structures and algorithms, including Linked Lists.
+
+
 
 📅 **Date:** 08/01/2026  
 ---
@@ -232,6 +235,9 @@ I have practiced several programs using control flow concepts.
 
 ✔️ Applied OOP concepts by solving a real-world, scenario-based problem.
 
+✔️ Learned about stacks, queues, hash maps, and hashing functions.
+
+
 
 📅 **Date:** 09/01/2026  
 ---
@@ -240,6 +246,9 @@ I have practiced several programs using control flow concepts.
 ---
 
 ✔️ Applied OOP concepts by solving a real-world, scenario-based problem.
+
+✔️Studied sorting algorithms and practiced implementing their code based on the given questions, including Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Quick Sort, Heap Sort, and Counting Sort.
+
 
 
 📅 **Date:** 12/01/2026  
@@ -256,6 +265,15 @@ I have practiced several programs using control flow concepts.
 ✔️ Second one is Metal Factory Pipe Cutting, which focused on maximizing revenue from cutting metal rods. The scenarios included identifying the best cutting strategy for a rod of length 8 using a given price chart, analyzing the impact of a custom-length order on overall revenue, and comparing optimized versus non-optimized cutting strategies to observe revenue differences.
 
 ✔️ Third one is LoanBuddy – Loan Approval Automation, which involved designing a backend loan approval engine for a fintech application. The task focused on collecting applicant details, verifying eligibility, automating loan approval decisions using custom rules, calculating EMIs, and generating personalized repayment plans.
+
+✔️ Learned about Linear Search
+
+✔️ Learned about Binary Search
+
+✔️ Learned about StringBuilder
+
+✔️ Learned about StringBuffer.
+
 
 
 📅 **Date:** 13/01/2026  
@@ -285,6 +303,12 @@ Features:
 addBook(title, author) ,
 sortBooksAlphabetically() ,
 searchByAuthor(author).
+
+✔️ Learned about Time Complexity Analysis.
+
+✔️ Learned about Space Complexity Analysis.
+
+
 
 
 📅 **Date:** 14/01/2026  
@@ -327,6 +351,234 @@ Encapsulation through well-defined models.
 Abstraction using interfaces.
 
 Clear separation of concerns across menu and  utility.
+
+
+✔️ Solved one scenario-based problem
+
+✔️ 🧭 BrowserBuddy – Tab History Manager 
+
+Program Functionality & Key Features:
+
+🔹 Manages browser tab history using a Doubly Linked List.
+
+🔹 Supports Back and Forward navigation efficiently.
+
+🔹 Stores recently closed tabs using a Stack.
+
+🔹 Allows restoring the last closed tab.
+
+🔹 Demonstrates practical use of DSA and OOPS concepts.
+
+
+
+📅 **Date:** 16/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Solved two scenario-based problem
+
+✔️ 🚦 TrafficManager – Roundabout Vehicle Flow
+
+
+Program Functionality & Key Features:
+
+🔹 Simulates a traffic roundabout using a Circular Linked List.
+
+🔹 Represents each vehicle as a node in the circular path.
+
+🔹 Manages incoming vehicles using a Queue.
+
+🔹 Handles queue overflow and underflow conditions.
+
+🔹 Supports adding and removing vehicles dynamically.
+
+---
+
+✔️ 📚 BookShelf – Library Organization System
+
+
+Program Functionality & Key Features:
+
+🔹 Maintains a genre-wise book catalog.
+
+🔹 Uses a HashMap to map Genre → List of Books.
+
+🔹 Uses LinkedList for efficient insertion and deletion of books.
+
+🔹 Dynamically updates the catalog when books are borrowed or returned.
+
+
+
+📅 **Date:** 17/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Solved two scenario-based problems using DSA concepts and Core C#
+
+✔️ ⚡ FlashDealz – Product Sorting by Discount 
+
+
+Program Functionality & Key Features:
+
+🔹 Sorts a large list of products based on discount percentage.
+
+🔹 Uses Quick Sort for fast average-case performance.
+
+🔹 Demonstrates practical use of divide-and-conquer algorithms.
+
+Concepts Used:
+
+Quick Sort
+
+---
+
+✔️ 🏃 FitnessTracker – Daily Step Count Ranking 
+
+
+Program Functionality & Key Features:
+
+🔹 Maintains daily step counts for a small group of users.
+
+🔹 Generates a ranked leaderboard based on steps.
+
+🔹 Uses Bubble Sort, suitable for small datasets.
+
+🔹 Supports frequent updates due to real-time step syncing.
+
+
+Concepts Used:
+
+Bubble Sort
+
+Frequent updates
+
+
+
+📅 **Date:** 19/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Solved two scenario-based problems using DSA concepts and Core C#
+
+✔️ 📦 ParcelTracker – Delivery Chain Management
+
+
+Program Functionality & Key Features:
+
+🔹 Tracks parcel delivery stages such as Packed → Shipped → In Transit → Delivered using a Singly Linked List.
+
+🔹 Allows forward traversal to monitor parcel progress through each delivery stage.
+
+🔹 Supports adding custom intermediate checkpoints dynamically in the delivery chain.
+
+
+Concepts Used:
+
+🔹 Singly Linked List
+
+---
+
+✔️ 📝 ExamProctor – Online Exam Review System
+
+Program Functionality & Key Features:
+
+🔹 Tracks student question navigation using a Stack (last visited question first).
+
+🔹 Stores student answers using a HashMap with questionID.
+
+🔹 Supports backward review of questions using stack operations.
+
+
+Concepts Used:
+
+🔹 Stack
+🔹 HashMap
+🔹 Functions.
+
+
+📅 **Date:** 20/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Solved Two scenario-based problems using DSA concepts and Core C#
+
+✔️ 🆔 Sorting Aadhar Numbers using Radix Sort
+
+Context:
+Aadhar numbers (12-digit) need to be sorted efficiently due to their large size.
+
+Program Functionality & Key Features:
+
+🔹 Sorts all Aadhar numbers in ascending order using Radix Sort.
+
+🔹 Enables binary search to find a specific Aadhar number after sorting.
+
+🔹 Maintains the relative order of entries with the same prefix using the stable nature of Radix Sort.
+
+Concepts Used:
+
+🔹 Radix Sort
+🔹 Binary Search
+
+---
+
+✔️🔐 Project: Password Cracker Simulator
+
+⚙️ Program Functionality & Key Features
+
+🔹 Generates all possible strings of length n using a given set of characters
+
+🔹 Uses Backtracking to explore each possible combination
+
+🔹 Stops early when the correct password is found.
+
+🧠 Concepts Used:
+🔹 Backtracking
+
+
+📅 **Date:** 21/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Solved a scenario-based problem using DSA (Merge Sort) and Core C#
+
+✔️ 🎓 EduResults – Rank Sheet Generator
+
+📌 Story Context
+An educational board collects marks of thousands of students from different districts.
+
+Each district sends a sorted list of students based on marks.
+
+⚙️ Program Functionality & Key Features
+
+🔹 Accepts multiple district-wise sorted student lists
+
+🔹 Merges all lists into one final sorted rank list
+
+🔹 Uses Merge Sort algorithm for efficiency
+
+🔹 Maintains stable sorting — students with the same marks keep their original order
+
+🔹 Works efficiently even for large datasets.
+
+
+
+
+
+
+
+
+
 
 
 
