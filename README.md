@@ -178,5 +178,159 @@ I have practiced several programs using control flow concepts.
 
 
 📅 **Date:** 03/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Studied Object-Oriented Programming (OOP) concepts and its four pillars:  
+- Encapsulation  
+- Inheritance  
+- Polymorphism  
+- Abstraction  
+
+---
+
+
+📅 **Date:** 05/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Gained a clear understanding of polymorphism, encapsulation, and abstraction
+✔️ Applied these OOP concepts by solving a real-world, scenario-based problem.
+
+
+
+📅 **Date:** 06/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Applied the OOP concepts by solving a real-world, scenario-based problem.
+
+
+
+
+📅 **Date:** 07/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Applied OOP concepts by solving a real-world, scenario-based problem
+✔️ Learned the proper structure to approach and solve scenario-based problems effectively.
+
+
+📅 **Date:** 08/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Applied OOP concepts by solving a real-world, scenario-based problem.
+
+
+📅 **Date:** 09/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Applied OOP concepts by solving a real-world, scenario-based problem.
+
+
+📅 **Date:** 12/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️Solved three scenario based quetions :-
+
+✔️ First one is Custom Furniture Manufacturing, where the task focused on optimizing wooden rod cutting for furniture. It involved determining the best cut to maximize earnings for a 12 ft rod, applying a fixed waste constraint given by the customer, and suggesting cuts that balance maximum revenue with minimal waste.
+
+
+✔️ Second one is Metal Factory Pipe Cutting, which focused on maximizing revenue from cutting metal rods. The scenarios included identifying the best cutting strategy for a rod of length 8 using a given price chart, analyzing the impact of a custom-length order on overall revenue, and comparing optimized versus non-optimized cutting strategies to observe revenue differences.
+
+✔️ Third one is LoanBuddy – Loan Approval Automation, which involved designing a backend loan approval engine for a fintech application. The task focused on collecting applicant details, verifying eligibility, automating loan approval decisions using custom rules, calculating EMIs, and generating personalized repayment plans.
+
+
+📅 **Date:** 13/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️Solved two scenario based quetions :-
+
+🎬 CinemaTime – Movie Schedule Manager
+
+Manages movie titles and showtimes
+
+Allows add, view, and search movies
+Methods:
+addMovie(title, time) ,
+searchMovie(keyword) using String.contains() ,
+displayAllMovies() ,
+Displays movies using formatted strings.
+
+📚 BookBuddy – Digital Bookshelf App
+Maintains a digital bookshelf of favorite books ,
+Stores books in "Title - Author" format
+
+Features:
+addBook(title, author) ,
+sortBooksAlphabetically() ,
+searchByAuthor(author).
+
+
+📅 **Date:** 14/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️Solved one scenario based quetions :-
+
+📒 Address Book System
+✔️Created an encapsulated Contact model to securely store and manage personal contact details.
+✔️Implemented features to add, edit, delete,  contacts using an array-based approach.
+
+
+📅 **Date:** 15/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Enhanced the Address Book System with advanced features 
+
+📒 Address Book System – Extended Implementation
+
+✔️ Added support for multiple address books, enabling users to create and manage separate contact groups such as Personal or Professional.
+
+✔️ Developed search functionality to locate contacts based on City or State.
+
+✔️ Implemented view functionality to display all contacts belonging to a specific City or State.
+
+✔️ Added counting functionality to determine the number of contacts in a given City or State.
+
+✔️ Implemented sorting by person name using an array-based sorting algorithm, without using collection frameworks.
+
+✔️ Followed Object-Oriented Programming principles, including:
+
+Encapsulation through well-defined models.
+
+Abstraction using interfaces.
+
 Clear separation of concerns across menu and  utility.
+
+
+
+
+
+
 
