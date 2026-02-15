@@ -62,4 +62,54 @@ I practiced multiple beginner-level programs in C# such as:
 - 🔁 Swapping of two numbers  
 - 🌡️ Temperature conversion programs  
 - 💰 Simple Interest calculation  
+- 🍫 Chocolate distribution problem
+These programs helped me understand user input, operators, calculations , and output formatting
+
+🔐 Learning About Access Modifiers   
+🔓public
+🔒private
+🧬protected
+🏢internal
+🔐protected internal
+I have also practiced programs based on access modifiers in C#. 
+
+📅 Date- 22/12/2025 
+## 📚 Topics Covered 
+
+# 🔄 Control Flow Statement
+
+### ✅ Conditional Statements 
+-if
+-if - else
+-else if
+-nested if
+
+### 🔁 Looping Statements 
+- for loop  
+- while loop  
+
+I have practiced several programs using control flow concepts.
+
+📅Date-23/12/2025
+## 📚 Topics Covered
+
+ 🔹 Array Basics  
+ 🔹 One-Dimensional Array (1D Array)  
+ 🔹 Two-Dimensional Array (2D Array) 
+
+- ✔️ Practiced programs on **arrays**  
+- ✔️ Solved problems using **1D arrays**  
+- ✔️ Solved problems using **2D arrays**
+
+📅Date-24/12/2025
+## 📚 Topics Covered
+
+🔹 Methods 
+- ✔️Solved problems by using methods
+
+📅Date-26/12/2025
+## 📚 Topics Covered
+
+🔤 String Concepts 
 - ✔️ Solved string problems using built-in functions as well as without built-in functions.
+
