@@ -113,3 +113,70 @@ I have practiced several programs using control flow concepts.
 🔤 String Concepts 
 - ✔️ Solved string problems using built-in functions as well as without built-in functions.
 
+
+📅 **Date:** 29/12/2025  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Understood the concepts of Object-Oriented Programming (OOP), including classes and objects  
+✔️ Solved three real-world scenario-based problems  
+
+---
+
+
+📅 **Date:** 30/12/2025  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Understood constructors and their role in object initialization  
+✔️ Learned the difference between instance variables and class (static) variables  
+✔️ Solved two real-world scenario-based problems  
+
+---
+
+
+📅 **Date:** 31/12/2025  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Learned about the `this`, `sealed`, and `static` keywords in C#  
+✔️ Understood the use of the `is` operator for type checking  
+✔️ Solved three real-world, scenario-based problems to apply these concepts practically  
+
+---
+
+
+📅 **Date:** 01/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Learned about object-oriented design principles  
+✔️ Studied object modeling and class diagrams  
+✔️ Solved one real-world scenario-based problem  
+
+---
+
+
+📅 **Date:** 02/01/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✔️ Learned the concept of inheritance  
+✔️ Solved two real-world scenario-based problems  
+
+---
+
+
+📅 **Date:** 03/01/2026  
+Clear separation of concerns across menu and  utility.
+
