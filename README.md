@@ -860,6 +860,104 @@ Bugs: 0
 Vulnerabilities: 0
 Security Hotspots: 0
 
+  ✅Learned about the stored procedures,triggers,er diagram 💻Implements query based on stored procedures,triggers
+
+
+📅 **Date:** 06/02/2026  
+---
+
+## 📚 Topics Covered
+---
+
+✅Learned about the database connection 📁working on Adress book system -apply basic core and oops concepts
+
+
+📅 **Date:** 07/02/2026  
+---
+
+## 📚 Topics Covered
+---
+
+ 📁working on Adress book system -apply collections,regex or other concepts
+
+
+📅 **Date:** 09/02/2026  
+---
+
+## 📚 Topics Covered
+---
+
+ 📁working on Adress book system -apply exception handling,file handling or other concepts
+
+
+📅 **Date:** 10/02/2026  
+---
+
+## 📚 Topics Covered
+---
+
+ 📁Solve 3 scenerio-based questions based on oops topics and testing ✅There is a mock test on this day
+
+
+📅 **Date:** 11/02/2026  
+--- 
+
+## 📚 Topics Covered
+---
+
+ 📁NotifyHub – Concurrent Notification Processing System Build a concurrent notification system using multithreading and async processing. Ensure safe, fast, and scalable delivery of Email, SMS, and App alerts.
+
+📅 **Date:** 12/02/2026  
+---
+
+## 📚 Topics Covered
+---
+
+ 📁Update and improve the Address Book System with better structure and features -create database and set up database connection
+
+📅 **Date:** 13/02/2026  
+--- 
+
+## 📚 Topics Covered
+---
+
+ 📁Bank Transaction Processing System- Create a simple bank system to store accounts and transactions, and update balances safely using database transactions. Handle multiple withdrawals at the same time, avoid errors, and test insufficient balance and rollback cases.
+
+
+📅 **Date:** 14/02/2026  
+---
+
+## 📚 Topics Covered
+---
+
+ 📁worked on Techville project complete module 1 to module 4 until core csharp concepts
+
+
+📅 **Date:** 16/02/2026  
+---
+
+## 📚 Topics Covered
+---
+
+ 📁Health Clinic App – Manage patient records, appointments, and medical history efficiently. Handle doctor schedules, prescriptions, and billing securely. Support reporting and analytics for clinic management.
+
+
+📅 **Date:** 17/02/2026  
+---
+
+## 📚 Topics Covered
+---
+ 📁Health Clinic App - create database of healthcare project and set up database connection
+
+
+📅 **Date:** 18/02/2026  
+---
+
+## 📚 Topics Covered
+---
+
+ 📁worked on Techville project complete module 5 to module 9 until oops concepts
+
 
 
 
