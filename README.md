@@ -769,6 +769,20 @@ User action metadata
 ## 📚 Topics Covered
 ---
 
+✔️ Learned CSV Data Handling in C#
+
+## Key Learnings:
+
+Reading data from CSV (Comma-Separated Values) files
+
+Writing data into CSV files
+
+Using StreamReader and StreamWriter for file operations
+
+Converting string data into appropriate data types
+
+Handling large structured datasets (like student records, reports, logs).
+
 ✔️ Solved scenario-based questions 🧠
 ➡️ Implemented validations for a bank account system 🏦
 ➡️ Covered different test cases 🧪 to verify correctness and handle edge cases.
@@ -780,6 +794,8 @@ User action metadata
 
 ## 📚 Topics Covered
 ---
+
+✔️ Learned JSON Data Handling in C#
 
 ✔️ Solved two scenario-based questions 🧠
 
@@ -957,6 +973,7 @@ Security Hotspots: 0
 ---
 
  📁worked on Techville project complete module 5 to module 9 until oops concepts
+
 
 
 
