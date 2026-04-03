@@ -1,0 +1,15 @@
+d:\BridgeLabz-Training\collections-csharp-practice\scenario-based\event-tracker\bin\Debug\net10.0\event-tracker.exe
+d:\BridgeLabz-Training\collections-csharp-practice\scenario-based\event-tracker\bin\Debug\net10.0\event-tracker.deps.json
+d:\BridgeLabz-Training\collections-csharp-practice\scenario-based\event-tracker\bin\Debug\net10.0\event-tracker.runtimeconfig.json
+d:\BridgeLabz-Training\collections-csharp-practice\scenario-based\event-tracker\bin\Debug\net10.0\event-tracker.dll
+d:\BridgeLabz-Training\collections-csharp-practice\scenario-based\event-tracker\bin\Debug\net10.0\event-tracker.pdb
+d:\BridgeLabz-Training\collections-csharp-practice\scenario-based\event-tracker\obj\Debug\net10.0\event-tracker.GeneratedMSBuildEditorConfig.editorconfig
+d:\BridgeLabz-Training\collections-csharp-practice\scenario-based\event-tracker\obj\Debug\net10.0\event-tracker.AssemblyInfoInputs.cache
+d:\BridgeLabz-Training\collections-csharp-practice\scenario-based\event-tracker\obj\Debug\net10.0\event-tracker.AssemblyInfo.cs
+d:\BridgeLabz-Training\collections-csharp-practice\scenario-based\event-tracker\obj\Debug\net10.0\event-tracker.csproj.CoreCompileInputs.cache
+d:\BridgeLabz-Training\collections-csharp-practice\scenario-based\event-tracker\obj\Debug\net10.0\event-tracker.sourcelink.json
+d:\BridgeLabz-Training\collections-csharp-practice\scenario-based\event-tracker\obj\Debug\net10.0\event-tracker.dll
+d:\BridgeLabz-Training\collections-csharp-practice\scenario-based\event-tracker\obj\Debug\net10.0\refint\event-tracker.dll
+d:\BridgeLabz-Training\collections-csharp-practice\scenario-based\event-tracker\obj\Debug\net10.0\event-tracker.pdb
+d:\BridgeLabz-Training\collections-csharp-practice\scenario-based\event-tracker\obj\Debug\net10.0\event-tracker.genruntimeconfig.cache
+d:\BridgeLabz-Training\collections-csharp-practice\scenario-based\event-tracker\obj\Debug\net10.0\ref\event-tracker.dll
