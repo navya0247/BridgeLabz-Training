@@ -1,0 +1,96 @@
+{
+  "scannerProperties": [
+    {
+      "key": "sonar.scanner.app",
+      "value": "ScannerMSBuild"
+    },
+    {
+      "key": "sonar.scanner.appVersion",
+      "value": "11.1"
+    },
+    {
+      "key": "sonar.scanner.bootstrapStartTime",
+      "value": "1771442193000"
+    },
+    {
+      "key": "sonar.projectKey",
+      "value": "address-book-system"
+    },
+    {
+      "key": "sonar.working.directory",
+      "value": "D:\\BridgeLabz-Training\\io-programming-csharp-practice\\scenario-based\\address-book-system\\.sonarqube\\out\\.sonar"
+    },
+    {
+      "key": "sonar.projectBaseDir",
+      "value": "D:\\BridgeLabz-Training\\io-programming-csharp-practice\\scenario-based\\address-book-system"
+    },
+    {
+      "key": "sonar.pullrequest.cache.basepath",
+      "value": "D:\\BridgeLabz-Training\\io-programming-csharp-practice\\scenario-based\\address-book-system"
+    },
+    {
+      "key": "sonar.sources",
+      "value": ""
+    },
+    {
+      "key": "sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "sonar.modules",
+      "value": "618F7743-060F-469E-96C2-04019D15EBA6"
+    },
+    {
+      "key": "618F7743-060F-469E-96C2-04019D15EBA6.sonar.projectKey",
+      "value": "address-book-system:618F7743-060F-469E-96C2-04019D15EBA6"
+    },
+    {
+      "key": "618F7743-060F-469E-96C2-04019D15EBA6.sonar.projectName",
+      "value": "address-book-system"
+    },
+    {
+      "key": "618F7743-060F-469E-96C2-04019D15EBA6.sonar.projectBaseDir",
+      "value": "D:\\BridgeLabz-Training\\io-programming-csharp-practice\\scenario-based\\address-book-system"
+    },
+    {
+      "key": "618F7743-060F-469E-96C2-04019D15EBA6.sonar.working.directory",
+      "value": "D:\\BridgeLabz-Training\\io-programming-csharp-practice\\scenario-based\\address-book-system\\.sonarqube\\out\\.sonar\\mod0"
+    },
+    {
+      "key": "618F7743-060F-469E-96C2-04019D15EBA6.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "618F7743-060F-469E-96C2-04019D15EBA6.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "618F7743-060F-469E-96C2-04019D15EBA6.sonar.sources",
+      "value": "D:\\BridgeLabz-Training\\io-programming-csharp-practice\\scenario-based\\address-book-system\\AddressBookExceptions.cs,D:\\BridgeLabz-Training\\io-programming-csharp-practice\\scenario-based\\address-book-system\\AddressBookMain.cs,D:\\BridgeLabz-Training\\io-programming-csharp-practice\\scenario-based\\address-book-system\\AddressBookMenu.cs,D:\\BridgeLabz-Training\\io-programming-csharp-practice\\scenario-based\\address-book-system\\AddressBookUtility.cs,D:\\BridgeLabz-Training\\io-programming-csharp-practice\\scenario-based\\address-book-system\\Contact.cs,D:\\BridgeLabz-Training\\io-programming-csharp-practice\\scenario-based\\address-book-system\\IAddressBook.cs,D:\\BridgeLabz-Training\\io-programming-csharp-practice\\scenario-based\\address-book-system\\db.json,D:\\BridgeLabz-Training\\io-programming-csharp-practice\\scenario-based\\address-book-system\\obj\\address-book-system.csproj.nuget.dgspec.json,D:\\BridgeLabz-Training\\io-programming-csharp-practice\\scenario-based\\address-book-system\\obj\\project.assets.json,D:\\BridgeLabz-Training\\io-programming-csharp-practice\\scenario-based\\address-book-system\\bin\\Debug\\net10.0\\address-book-system.deps.json,D:\\BridgeLabz-Training\\io-programming-csharp-practice\\scenario-based\\address-book-system\\bin\\Debug\\net10.0\\address-book-system.runtimeconfig.json,D:\\BridgeLabz-Training\\io-programming-csharp-practice\\scenario-based\\address-book-system\\obj\\Debug\\net10.0\\address-book-system.sourcelink.json"
+    },
+    {
+      "key": "618F7743-060F-469E-96C2-04019D15EBA6.sonar.cs.analyzer.projectOutPaths",
+      "value": "D:\\BridgeLabz-Training\\io-programming-csharp-practice\\scenario-based\\address-book-system\\.sonarqube\\out\\0"
+    },
+    {
+      "key": "618F7743-060F-469E-96C2-04019D15EBA6.sonar.cs.roslyn.reportFilePaths",
+      "value": "D:\\BridgeLabz-Training\\io-programming-csharp-practice\\scenario-based\\address-book-system\\.sonarqube\\out\\0\\Issues.json"
+    },
+    {
+      "key": "618F7743-060F-469E-96C2-04019D15EBA6.sonar.cs.scanner.telemetry",
+      "value": "D:\\BridgeLabz-Training\\io-programming-csharp-practice\\scenario-based\\address-book-system\\.sonarqube\\out\\0\\Telemetry.json"
+    },
+    {
+      "key": "sonar.login",
+      "value": "***"
+    },
+    {
+      "key": "sonar.host.url",
+      "value": "http://localhost:9000"
+    },
+    {
+      "key": "sonar.visualstudio.enable",
+      "value": "false"
+    }
+  ]
+}
