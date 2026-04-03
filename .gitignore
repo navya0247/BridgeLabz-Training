@@ -31,4 +31,5 @@ Thumbs.db
 # Other ignores
 # ===============================
 *.onetoc2
+*.one
 DBConnect/
