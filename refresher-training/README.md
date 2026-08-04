@@ -36,6 +36,57 @@ Built on the Day 1 schema with additional tables and deeper database concepts:
 - Normalization — verifying 1NF, 2NF, and 3NF compliance
 
 
+# Day 3 – Stored Procedures & Triggers
+
+## 📖 Topics Covered
+- SQL Joins: `INNER`, `LEFT`, `RIGHT`, `FULL OUTER`
+- Stored Procedures
+- SQL Triggers
+- INSERT Trigger
+- UPDATE Trigger
+- DELETE Trigger
+- Audit Tables
+
+
+## 🛠️ Practical Implementation
+Enhanced the Health Clinic Database by implementing stored procedures and trigger-based automation for querying,  and auditing.
+
+### Tasks Completed
+- ✅ Created `DoctorAudit`, `PatientAudit`, `AppointmentAudit` tables
+- ✅ Implemented `INSERT`, `UPDATE`, `DELETE` triggers for `Doctor`
+- ✅ Implemented `INSERT`, `UPDATE`, `DELETE` triggers for `Patient`
+- ✅ Implemented `INSERT`, `UPDATE`, `DELETE` triggers for `Appointment`
+- ✅ Created parameterized Stored Procedures for `Doctor` (Insert, Update, Delete)
+- ✅ Verified automatic audit logging through SQL Server triggers
+
+
+## 🗄️ Database Enhancements
+
+### Audit Tables Created
+- `DoctorAudit`
+- `PatientAudit`
+- `AppointmentAudit`
+
+### Triggers Implemented
+
+**Doctor**
+- `trg_Doctor_Insert`
+- `trg_Doctor_Update`
+- `trg_Doctor_Delete`
+
+**Patient**
+- `trg_Patient_Insert`
+- `trg_Patient_Update`
+- `trg_Patient_Delete`
+
+**Appointment**
+- `trg_Appointment_Insert`
+- `trg_Appointment_Update`
+- `trg_Appointment_Delete`
+
+
+
+
 
 
 
