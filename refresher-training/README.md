@@ -85,6 +85,38 @@ Enhanced the Health Clinic Database by implementing stored procedures and trigge
 - `trg_Appointment_Delete`
 
 
+# Day 4 – ADO.NET: Health Clinic Console App
+
+## 📖 Topics Covered
+- ADO.NET (Microsoft.Data.SqlClient)
+- Connected Architecture (SqlConnection, SqlCommand, SqlDataReader)
+- Layered Console App Structure (Entity / Service / Menu / Program)
+- CRUD Operations via C#
+- Parameterized Queries 
+
+## 🛠️ Practical Implementation
+Built a console-based Health Clinic App on top of the `HealthCare` SQL Server database, using a clean layered structure.
+
+### Project Structure
+- **Entities** – `Doctor`, `Patient`, `Appointment` 
+- **Service** – `DatabaseConnection`, `DoctorService`, `PatientService`, `AppointmentService` (all database logic lives here)
+- **Menu** – `HealthMenu` 
+- **Program.cs** – entry point, starts the menu
+
+### Tasks Completed
+- ✅ Installed `Microsoft.Data.SqlClient` package
+- ✅ Built `DatabaseConnection` helper holding the connection string
+- ✅ Implemented Doctor CRUD using Day 3's stored procedures (`sp_InsertDoctor`, `sp_UpdateDoctor`, `sp_DeleteDoctor`)
+- ✅ Implemented Patient CRUD using parameterized SQL
+- ✅ Implemented Appointment CRUD (book, view, update status, delete)
+- ✅ Added existence checks before Update/Delete, so operations fail gracefully instead of silently doing nothing
+- ✅ Update operations only change the specific field selected — not the entire record
+
+
+
+
+
+
 
 
 
