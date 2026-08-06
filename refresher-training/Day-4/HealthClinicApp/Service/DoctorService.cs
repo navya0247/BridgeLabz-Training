@@ -8,8 +8,7 @@ namespace HealthClinicApp.Service
     {
         private readonly DatabaseConnection db = new DatabaseConnection();
 
-        // ---------------- ADD ----------------
-        // stored procedure sp_InsertDoctor -> trg_Doctor_Insert fires automatically
+        // ---------------- ADD DOCTOR (Stored Procedure) ----------------
         public void AddDoctor(Doctor doctor)
         {
             using SqlConnection connection = db.GetConnection();
@@ -21,22 +20,22 @@ namespace HealthClinicApp.Service
             cmd.Parameters.AddWithValue("@Specialization", doctor.Specialization);
             cmd.Parameters.AddWithValue("@Phone", doctor.Phone);
 
-            connection.Open();
+            connection.Open(); // connected
             cmd.ExecuteNonQuery();
             connection.Close();
+            // trg_Doctor_Insert fires automatically, logs into DoctorAudit
         }
 
-        // ---------------- VIEW ALL ----------------
-        // connected read, prints directly, no List<> used
+        // ---------------- VIEW ALL DOCTORS - CONNECTED (Query) ----------------
         public void ViewAllDoctors()
         {
             using SqlConnection connection = db.GetConnection();
             using SqlCommand cmd = new SqlCommand("SELECT * FROM Doctor", connection);
 
-            connection.Open();
+            connection.Open(); // connected - stays open while reading
             using SqlDataReader reader = cmd.ExecuteReader();
 
-            Console.WriteLine("\n--- All Doctors ---");
+            Console.WriteLine("\n================== DOCTOR LIST (Connected) ==================");
             while (reader.Read())
             {
                 Doctor doctor = new Doctor(
@@ -45,15 +44,31 @@ namespace HealthClinicApp.Service
                     reader["Specialization"].ToString(),
                     reader["Phone"].ToString()
                 );
-                doctor.DoctorId = (int)reader["DoctorId"];   // set after construction, since constructor has no ID
+                doctor.DoctorId = (int)reader["DoctorId"];
                 Console.WriteLine(doctor);
             }
         }
 
-        // ---------------- UPDATE ----------------
-        // Takes the field choice + new value directly, so Menu has zero decision-making
+        // ---------------- VIEW ALL DOCTORS - DISCONNECTED (DataAdapter + DataTable) ----------------
+        public void ViewDoctorsDisconnected()
+        {
+            using SqlConnection connection = db.GetConnection();
+            string query = "SELECT * FROM Doctor";
+            SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+
+            DataTable table = new DataTable();
+            adapter.Fill(table); // opens, fetches all rows, closes automatically - connection not held open
+
+            Console.WriteLine("\n================== DOCTOR LIST (Disconnected) ==================");
+            foreach (DataRow row in table.Rows)
+            {
+                Console.WriteLine($"ID: {row["DoctorId"]} | Name: {row["FirstName"]} {row["LastName"]} | " +
+                                   $"Specialization: {row["Specialization"]} | Phone: {row["Phone"]}");
+            }
+        }
+
+        // ---------------- UPDATE DOCTOR ----------------
         // fieldChoice: 1 = Specialization, 2 = Phone
-        // stored procedure sp_UpdateDoctor -> trg_Doctor_Update fires automatically
         public bool UpdateDoctor(int doctorId, int fieldChoice, string newValue)
         {
             using SqlConnection connection = db.GetConnection();
@@ -65,7 +80,7 @@ namespace HealthClinicApp.Service
 
             if (!reader.Read())
             {
-                return false;   // doctor not found, nothing updated
+                return false; // doctor not found
             }
 
             string firstName = reader["FirstName"].ToString();
@@ -74,7 +89,6 @@ namespace HealthClinicApp.Service
             string phone = reader["Phone"].ToString();
             reader.Close();
 
-            // only change the field the user picked, keep everything else as-is
             if (fieldChoice == 1) specialization = newValue;
             if (fieldChoice == 2) phone = newValue;
 
@@ -86,12 +100,12 @@ namespace HealthClinicApp.Service
             updateCmd.Parameters.AddWithValue("@Specialization", specialization);
             updateCmd.Parameters.AddWithValue("@Phone", phone);
             updateCmd.ExecuteNonQuery();
+            // trg_Doctor_Update fires automatically, logs into DoctorAudit
 
             return true;
         }
 
-        // ---------------- DELETE ----------------
-        // stored procedure sp_DeleteDoctor -> trg_Doctor_Delete fires automatically
+        // ---------------- DELETE DOCTOR ----------------
         public bool DeleteDoctor(int doctorId)
         {
             using SqlConnection connection = db.GetConnection();
@@ -103,13 +117,14 @@ namespace HealthClinicApp.Service
 
             if (count == 0)
             {
-                return false;   // doctor not found, nothing deleted
+                return false; // doctor not found
             }
 
             using SqlCommand deleteCmd = new SqlCommand("sp_DeleteDoctor", connection);
             deleteCmd.CommandType = CommandType.StoredProcedure;
             deleteCmd.Parameters.AddWithValue("@DoctorId", doctorId);
             deleteCmd.ExecuteNonQuery();
+            // trg_Doctor_Delete fires automatically, logs into DoctorAudit
 
             return true;
         }

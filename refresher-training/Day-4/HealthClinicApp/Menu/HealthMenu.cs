@@ -43,6 +43,7 @@ namespace HealthClinicApp.Menu
                 Console.WriteLine("2. View All Doctors");
                 Console.WriteLine("3. Update Doctor");
                 Console.WriteLine("4. Delete Doctor");
+                Console.WriteLine("5. View Doctors (Disconnected)");
                 Console.WriteLine("0. Back to Main Menu");
                 Console.Write("Choose an option: ");
 
@@ -83,6 +84,10 @@ namespace HealthClinicApp.Menu
                         int deleteId = int.Parse(Console.ReadLine());
                         bool deleted = doctorService.DeleteDoctor(deleteId);
                         Console.WriteLine(deleted ? "Doctor deleted successfully." : "Doctor not found.");
+                        break;
+
+                    case "5":
+                        doctorService.ViewDoctorsDisconnected();
                         break;
 
                     case "0": back = true; break;

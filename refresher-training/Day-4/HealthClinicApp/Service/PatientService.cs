@@ -24,7 +24,7 @@ namespace HealthClinicApp.Service
 
             connection.Open();
             cmd.ExecuteNonQuery();
-            // trg_Patient_Insert fires automatically, logs to PatientAudit
+            
         }
 
         // ---------------- VIEW ALL ----------------
