@@ -132,6 +132,27 @@ Scaffolded a basic ASP.NET Core Web API project and restructured it into separat
 API → Service → Repository → Entities
 
 
+# Day 6 – ASP.NET Core MVC: Greetings App
+
+## 📖 Topics Covered
+- ASP.NET Core MVC (Model, View, Controller)
+- Routing 
+- Reading configuration values from `appsettings.json`
+- Basic CSS styling (external stylesheet)
+- Button click / form submission (HTTP POST)
+
+## 🛠️ Practical Implementation
+Built a simple MVC web app where clicking a button displays a welcome message — with the message pulled from configuration instead of being hardcoded.
+
+### Project Structure
+- **Models** – `GreetingModel` (holds the message text)
+- **Controllers** – `GreetingsController` (handles button click, reads message from config)
+- **Views** – `Greetings/Index.cshtml` (button + conditional message display)
+- **wwwroot/css/site.css** – page styling
+
+
+
+
 
 
 

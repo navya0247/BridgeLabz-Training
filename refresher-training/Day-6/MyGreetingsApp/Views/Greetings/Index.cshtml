@@ -1,0 +1,12 @@
+@model MyGreetingsApp.Models.GreetingModel
+
+<h2>My Greetings App</h2>
+
+<form asp-action="ShowGreeting" method="post">
+    <button type="submit">Click Me</button>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.Message))
+{
+    <h3>@Model.Message</h3> <!-- shows only after button click -->
+}
