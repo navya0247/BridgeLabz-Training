@@ -179,7 +179,37 @@ Created a  `ContactsDB` database  with a single `Contact` table (`ContactId`, `N
   - `POST /contacts` – add a new contact
   - `PUT /contacts/{id}` – update an existing contact
   - `DELETE /contacts/{id}` – delete a contact
-- ✅ Organized code into `Models` and `Repository` folders with matching namespaces
+
+
+# Day 8 – H2Sharp Investigation & Contacts App CRUD
+
+## 📖 Topics Covered
+- H2 Database and the H2Sharp ADO.NET wrapper
+- Distributed Architectures — overview and motivation
+- Minimal APIs (continued from Day 7)
+- ADO.NET with SQL Server 
+- API testing with Postman
+
+## 🛠️ Practical Implementation
+
+### Contacts App CRUD (Minimal API + SQL Server)
+- **Models** – `Contact.cs`
+- **Repository** – `DatabaseConnection.cs`, `ContactRepository.cs`
+- **Program.cs** – Minimal API endpoints
+
+### Tasks Completed
+- ✅ Created `ContactsDB` database and `Contact` table
+- ✅ Implemented full CRUD via Minimal API endpoints:
+  - `GET /contacts` – view all contacts
+  - `POST /contacts` – add a new contact
+  - `PUT /contacts/{id}` – update a contact
+  - `DELETE /contacts/{id}` – delete a contact
+- ✅ Verified all 4 endpoints using Postman
+- ✅ Saved requests into a reusable "ContactsApp" Postman collection
+
+
+## 🌐 Distributed Architectures — Overview
+A distributed architecture splits an application across multiple independent services (potentially on different machines), instead of one single app handling everything (a monolith).
 
 
 
