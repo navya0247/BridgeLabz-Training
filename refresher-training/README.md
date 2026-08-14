@@ -272,6 +272,53 @@ Built an Address Book application using a proper layered structure, separating c
 
 
 
+# Day 11 – Address Book with Layered Architecture (EF Core CRUD)
+
+## 📖 Topics Covered
+- Layered architecture: Model, Repository, Business, API layers
+- Entity Framework Core 
+- DTOs vs Entities
+- Dependency Injection across layers
+- Full CRUD via Web API Controllers
+- Swagger for API testing
+
+## 🛠️ Practical Implementation
+Built an Address Book application using a proper layered structure, separating concerns across Model, Repository, and Business layers, exposed via a Web API with Controllers.
+
+### Project Structure
+- **ModelLayer** – `Entities/Contact.cs` (db entity), `Dtos/ContactDto.cs` 
+- **RepositoryLayer** – `Context/AppDbContext.cs`, `Interface/IContactRepository.cs`, `Service/ContactRepository.cs` 
+- **BusinessLayer** – `Interface/IContactService.cs`, `Service/ContactService.cs` (business logic, converts Dto to Entity)
+- **AddressBook** – `Controllers/ContactController.cs` (API endpoints), `Program.cs` (DI setup, Swagger)
+
+### Tasks Completed
+- ✅ Created 4-project solution: AddressBook (Web API), ModelLayer, RepositoryLayer, BusinessLayer
+- ✅ Set up project references across layers
+- ✅ Installed EF Core packages and Swashbuckle for Swagger
+- ✅ Created `Contact` entity and `ContactDto`
+- ✅ Implemented Repository layer with direct `AppDbContext` operations
+- ✅ Implemented Business layer that maps Dto → Entity and calls Repository
+- ✅ Built `ContactController` with full CRUD: Add, GetAll, GetById, Update, Delete
+- ✅ Registered DbContext, Repository, and Service in `Program.cs` using Dependency Injection
+- ✅ Generated migration and created `AddressBookDB` database with `Contacts` table
+- ✅ Tested all endpoints via Swagger UI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
