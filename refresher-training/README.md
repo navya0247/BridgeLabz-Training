@@ -304,6 +304,37 @@ Built an Address Book application using a proper layered structure, separating c
 - ✅ Tested all endpoints via Swagger UI
 
 
+# Day 12 – Fundoo App: User Registration & Login with JWT
+
+## 📖 Topics Covered
+- JWT (JSON Web Token) based authentication
+- Password security: hashing and salting using BCrypt
+- Layered architecture for User module: Model, Repository, Business, API
+- Custom exception handling
+
+## 🛠️ Practical Implementation
+Started the Fundoo Notes App backend with User Registration, Login (JWT token generation).
+
+### Project Structure
+- **ModelLayer** – `Entities/User.cs`, `Dtos/RegisterDto.cs`, `Dtos/LoginDto.cs`, `Dtos/ForgotPasswordDto.cs`, `Exceptions/` (UserAlreadyExistsException, InvalidCredentialsException, UserNotFoundException)
+- **RepositoryLayer** – `Context/AppDbContext.cs`, `Interface/IUserRepository.cs`, `Service/UserRepository.cs`
+- **BusinessLayer** – `Interface/IUserService.cs`, `Service/UserService.cs`, `Helper/JwtTokenHelper.cs`
+- **FundooApp** – `Controllers/UserController.cs`, `Program.cs`
+
+### Tasks Completed
+- ✅ Created 4-project layered solution: FundooApp, ModelLayer, RepositoryLayer, BusinessLayer
+- ✅ Installed BCrypt.Net-Next for password hashing and salting
+- ✅ Installed JWT packages for token generation
+- ✅ Implemented `Register` API with duplicate email check and password hashing
+- ✅ Implemented `Login` API with password verification and JWT token generation
+- ✅ Added custom exceptions and handled them via try-catch in Controller
+- ✅ Generated migration and created `FundooDB` database with `Users` table
+- ✅ Verified all 3 endpoints via Swagger UI
+
+
+
+
+
 
 
 
