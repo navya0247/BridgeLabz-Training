@@ -332,33 +332,31 @@ Started the Fundoo Notes App backend with User Registration, Login (JWT token ge
 - ✅ Verified all 3 endpoints via Swagger UI
 
 
+# Day 13 – Fundoo Notes App: Authentication & Authorization Module 
+
+## 📖 Topics Covered
+- JWT authentication setup 
+- Full validation using Data Annotations on DTOs and Models
+- Password hashing and salting using BCrypt
 
 
+## 🛠️ Practical Implementation
+Built the User Authentication module for Fundoo Notes App with proper layered architecture, complete Request/Response DTOs with validation .
 
+### Project Structure
+- **FundooNotesApp.ModelLayer** – `Entities/UserEntity.cs`, `Models/UserModel.cs`, `Dtos/Request/` (Register, Login, ForgotPassword, ResetPassword), `Dtos/Response/` (Register, Login, ApiResponse), `Exceptions/`
+- **FundooNotesApp.RepositoryLayer** – `Context/AppDbContext.cs`, `Interface/IUserRepository.cs`, `Service/UserRepository.cs`
+- **FundooNotesApp.BusinessLayer** – `Interface/IUserService.cs`, `Service/UserService.cs`, `Helper/PasswordHasher.cs`, `Helper/JwtTokenHelper.cs`
+- **FundooNotesApp.API** – `Controllers/UserController.cs`, `Program.cs`
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Tasks Completed
+- ✅ Created 4-project layered solution with proper project references
+- ✅ Added full Data Annotation validations on all Request DTOs and UserModel
+- ✅ Implemented `UserEntity` (db-facing, has PasswordHash) separate from `UserModel` (safe, passed outward from Repository)
+- ✅ Implemented password hashing and salting via BCrypt in `PasswordHasher` helper
+- ✅ Implemented JWT token generation via `JwtTokenHelper`
+- ✅ Built Register, Login, Forgot Password, Reset Password APIs with custom exception handling
+- ✅ Configured JWT Bearer authentication in `Program.cs` (`AddAuthentication`, `AddJwtBearer`) as groundwork — no protected endpoints yet
+- ✅ Generated migration and created `FundooNotesDB` database with `Users` table
+- ✅ Verified all 4 endpoints via Swagger UI
 
