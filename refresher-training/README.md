@@ -360,3 +360,31 @@ Built the User Authentication module for Fundoo Notes App with proper layered ar
 - ✅ Generated migration and created `FundooNotesDB` database with `Users` table
 - ✅ Verified all 4 endpoints via Swagger UI
 
+
+# Day 14 – Fundoo Notes App: Notes Management Module (Create, Retrieve, Delete)
+
+## 📖 Topics Covered
+- JWT Claims — reading UserId from token instead of client sending it
+- [Authorize] attribute for protected endpoints
+- Notes CRUD (Create, Retrieve All, Delete) linked to authenticated user
+- Layered architecture extended for Notes: Entity, Model, DTOs, Repository, Business, Controller
+
+## 🛠️ Practical Implementation
+Extended the Fundoo Notes App backend (built on Day 13's Auth module) by adding a complete Notes Management module. Notes endpoints are protected with JWT authentication, and the logged-in user's identity is extracted from token claims rather than passed manually by the client.
+
+### Project Structure
+- **ModelLayer** – `Entities/NotesEntity.cs`, `Models/NotesModel.cs`, `Dtos/Request/NotesRequestDto.cs`, `Dtos/Response/NotesResponseDto.cs`, `Exceptions/NoteNotFoundException.cs`
+- **RepositoryLayer** – `Interface/INotesRepository.cs`, `Service/NotesRepository.cs`, `AppDbContext` updated with `Notes` DbSet
+- **BusinessLayer** – `Interface/INotesService.cs`, `Service/NotesService.cs`
+- **API** – `Controllers/NotesController.cs` (protected with `[Authorize]`)
+
+### Tasks Completed
+- ✅ Added `NotesRequestDto` and `NotesResponseDto` with validation
+- ✅ Implemented Repository methods: AddNote, GetAllNotes, GetNoteById, DeleteNote
+- ✅ Implemented Business layer mapping Request DTO → Entity, and Model → Response DTO
+- ✅ Built `NotesController` with `[Authorize]` on the whole controller
+- ✅ Built 3 endpoints: Create Note, Retrieve All Notes, Delete Note 
+- ✅ Registered `INotesRepository`/`INotesService` in `Program.cs`
+- ✅ Generated migration adding `Notes` table, linked to `Users` via `UserId`
+- ✅ Verified endpoints via Swagger using Bearer token authorization
+
