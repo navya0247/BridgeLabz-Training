@@ -388,3 +388,26 @@ Extended the Fundoo Notes App backend (built on Day 13's Auth module) by adding 
 - ✅ Generated migration adding `Notes` table, linked to `Users` via `UserId`
 - ✅ Verified endpoints via Swagger using Bearer token authorization
 
+
+# Day 15 – Fundoo Notes App: Pin/Archive/Trash & Search/Filter Modules
+
+## 📖 Topics Covered
+- Toggle-style endpoints for single boolean fields
+- Search functionality using LINQ `.Contains()`
+- Filter functionality using optional query parameters
+
+## 🛠️ Practical Implementation
+Extended the Notes module  with Pin, Archive, and Trash toggle endpoints, plus Search and Filter functionality — all still scoped to the authenticated user via JWT claims.
+
+### Project Structure
+- **RepositoryLayer** – `Interface/INotesRepository.cs`, `Service/NotesRepository.cs` updated with `TogglePin`, `ToggleArchive`, `ToggleTrash`, `SearchNotes`, `FilterNotes`
+- **BusinessLayer** – `Interface/INotesService.cs`, `Service/NotesService.cs` updated with matching methods, shared `MapToDto` helper added
+- **API** – `Controllers/NotesController.cs` updated with 5 new endpoints
+
+### Tasks Completed
+- ✅ Added `TogglePin`, `ToggleArchive`, `ToggleTrash` methods in Repository — each flips one boolean field and updates `Edited` timestamp
+- ✅ Added `SearchNotes` method using `.Contains()` on Title and Description
+- ✅ Added `FilterNotes` method with optional `pin`, `archive`, `trash` query parameters
+- ✅ All endpoints remain protected with `[Authorize]` and scoped to logged-in user via JWT claims
+- ✅ Verified all endpoints via Swagger UI with Bearer token authorization
+
