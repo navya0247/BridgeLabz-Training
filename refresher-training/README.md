@@ -411,3 +411,31 @@ Extended the Notes module  with Pin, Archive, and Trash toggle endpoints, plus S
 - ✅ All endpoints remain protected with `[Authorize]` and scoped to logged-in user via JWT claims
 - ✅ Verified all endpoints via Swagger UI with Bearer token authorization
 
+
+# Day 16 – Fundoo Notes App: Labels Module + MSTest Unit Testing
+
+## 📖 Topics Covered
+- Pub-sub pattern for event-driven communication (theory)
+- Unit Testing with MSTest
+- API Testing with Postman, API Documentation with Swagger
+
+## 🛠️ Practical Implementation
+Built the Labels Management module (Create, Get All, Edit, Delete labels linked to notes) following the same layered pattern as Notes and Users. Then wrote a full MSTest suite covering User, Notes, and Label business logic using an in-memory EF Core database, so tests run without touching the real SQL Server database.
+
+### Project Structure
+- **ModelLayer** – `Entities/LabelEntity.cs` , `Models/LabelModel.cs`, `Dtos/Request/LabelRequestDto.cs`, `Exceptions/LabelNotFoundException.cs`
+- **RepositoryLayer** – `Interface/ILabelRepository.cs`, `Service/LabelRepository.cs`
+- **BusinessLayer** – `Interface/ILabelService.cs`, `Service/LabelService.cs`
+- **API** – `Controllers/LabelController.cs`
+- **FundooNotesApp.Tests** – `UserTests.cs`, `NoteTests.cs`, `LabelTests.cs`
+
+### Tasks Completed
+- ✅ Built Labels module: Create, GetAll, Edit, Delete — each label linked to a UserId and NoteId
+- ✅ Added `[ForeignKey]` relationships on `LabelEntity` to User and Note
+- ✅ Registered `ILabelRepository`/`ILabelService` in `Program.cs`
+- ✅ Generated migration for `Labels` table
+- ✅ Created separate `FundooNotesApp.Tests` project referencing Business, Repository, and Model layers
+- ✅ Wrote 22 unit tests covering Register/Login/ForgotPassword/ResetPassword, Notes CRUD + Pin/Archive/Trash/Search/Filter, and Labels CRUD
+- ✅ Verified all tests pass using `dotnet test`
+- ✅ Verified Labels endpoints via Swagger UI with Bearer token authorization
+
