@@ -439,3 +439,31 @@ Built the Labels Management module (Create, Get All, Edit, Delete labels linked 
 - ✅ Verified all tests pass using `dotnet test`
 - ✅ Verified Labels endpoints via Swagger UI with Bearer token authorization
 
+
+
+# Day 17 – Fundoo Notes App: Reminder & Notification Module
+
+## 📖 Topics Covered
+- Background Services (`BackgroundService`, `IHostedService`) for async, non-blocking scheduled tasks
+- Reminder scheduling on notes
+- Notification generation and retrieval
+
+## 🛠️ Practical Implementation
+Added a Reminder system to Notes and a Notification module that runs automatically in the background, checking for due reminders every minute and generating notifications without blocking the main API thread.
+
+### Project Structure
+- **ModelLayer** – `Entities/NotificationEntity.cs`, `Dtos/Response/NotificationResponseDto.cs`, `NotesEntity` updated with `Notified` flag
+- **RepositoryLayer** – `Interface/INotificationRepository.cs`, `Service/NotificationRepository.cs`, `INotesRepository`/`NotesRepository` updated with `SetReminder`
+- **BusinessLayer** – `Interface/INotificationService.cs`, `Service/NotificationService.cs`, `BackgroundServices/ReminderBackgroundService.cs`
+- **API** – `Controllers/NotificationController.cs`, `NotesController` updated with `SetReminder` endpoint
+
+### Tasks Completed
+- ✅ Added `Notified` flag on `NotesEntity` to track if a reminder was already processed
+- ✅ Created `NotificationEntity` and `Notifications` table via migration
+- ✅ Implemented `SetReminder` endpoint to set/update a note's reminder datetime
+- ✅ Built `ReminderBackgroundService` extending `BackgroundService`, checking every 1 minute for due reminders
+- ✅ Implemented `ProcessDueReminders` in Business layer — creates a notification and marks the note as notified
+- ✅ Built `NotificationController` with `GET all` and `PATCH read/{id}` endpoints
+- ✅ Registered `ReminderBackgroundService` via `AddHostedService` in `Program.cs`
+- ✅ Installed `Microsoft.Extensions.Hosting.Abstractions` package for BackgroundService support
+
