@@ -1,7 +1,9 @@
 using FundooNotesApp.ModelLayer.Dtos.Response;
 using FundooNotesApp.ModelLayer.Entities;
 using FundooNotesApp.ModelLayer.Exceptions;
+using FundooNotesApp.ModelLayer.Models;
 using FundooNotesApp.BusinessLayer.Interface;
+using FundooNotesApp.BusinessLayer.Helper;
 using FundooNotesApp.RepositoryLayer.Interface;
 
 namespace FundooNotesApp.BusinessLayer.Service
@@ -9,14 +11,17 @@ namespace FundooNotesApp.BusinessLayer.Service
     public class NotificationService : INotificationService
     {
         private readonly INotificationRepository _repository;
+        private readonly IUserRepository _userRepository;
+        private readonly RabbitMqPublisher _publisher;
 
-        // repository injected here
-        public NotificationService(INotificationRepository repository)
+        // repositories and publisher injected here
+        public NotificationService(INotificationRepository repository, IUserRepository userRepository, RabbitMqPublisher publisher)
         {
             _repository = repository;
+            _userRepository = userRepository;
+            _publisher = publisher;
         }
 
-        // maps entity to response dto
         private NotificationResponseDto MapToDto(NotificationEntity n)
         {
             return new NotificationResponseDto
@@ -46,12 +51,11 @@ namespace FundooNotesApp.BusinessLayer.Service
 
         public void ProcessDueReminders()
         {
-            // find notes whose reminder time has passed
             var dueNotes = _repository.GetDueReminders();
 
             foreach (var note in dueNotes)
             {
-                // create a notification for each due reminder
+                // save in-app notification like before
                 var notification = new NotificationEntity
                 {
                     NoteId = note.NoteId,
@@ -60,9 +64,19 @@ namespace FundooNotesApp.BusinessLayer.Service
                     IsRead = false,
                     CreatedAt = DateTime.UtcNow
                 };
-
                 _repository.AddNotification(notification);
                 _repository.MarkNoteAsNotified(note.NoteId);
+
+                                // find user email and publish email job to rabbitmq queue
+                var user = _userRepository.GetUserById(note.UserId);
+                if (user != null)
+                {
+                    _publisher.PublishReminderEmail(new ReminderEmailMessage
+                    {
+                        ToEmail = user.Email,
+                        NoteTitle = note.Title
+                    }).GetAwaiter().GetResult();
+                }
             }
         }
     }

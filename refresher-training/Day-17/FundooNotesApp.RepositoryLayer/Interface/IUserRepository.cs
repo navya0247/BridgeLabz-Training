@@ -16,5 +16,7 @@ namespace FundooNotesApp.RepositoryLayer.Interface
 
         // updates entity, used for saving reset token or new password
         UserEntity UpdateUser(UserEntity user);
+
+        UserEntity? GetUserById(int userId);
     }
 }

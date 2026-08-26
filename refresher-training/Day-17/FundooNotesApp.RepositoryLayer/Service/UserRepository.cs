@@ -46,5 +46,10 @@ namespace FundooNotesApp.RepositoryLayer.Service
             _context.SaveChanges();
             return user;
         }
+
+        public UserEntity? GetUserById(int userId)
+        {
+            return _context.Users.FirstOrDefault(u => u.UserId == userId);
+        }
     }
 }

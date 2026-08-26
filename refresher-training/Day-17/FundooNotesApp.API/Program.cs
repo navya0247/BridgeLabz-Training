@@ -29,11 +29,26 @@ builder.Services.AddScoped<INotesService, NotesService>();
 builder.Services.AddScoped<ILabelRepository, LabelRepository>();
 builder.Services.AddScoped<ILabelService, LabelService>();
 
+// smtp settings
+string smtpHost = builder.Configuration["Smtp:Host"]!;
+int smtpPort = int.Parse(builder.Configuration["Smtp:Port"]!);
+string senderEmail = builder.Configuration["Smtp:SenderEmail"]!;
+string senderPassword = builder.Configuration["Smtp:SenderPassword"]!;
+builder.Services.AddSingleton(new EmailSender(smtpHost, smtpPort, senderEmail, senderPassword));
+
+// rabbitmq settings
+string rabbitHost = builder.Configuration["RabbitMQ:HostName"]!;
+string queueName = builder.Configuration["RabbitMQ:QueueName"]!;
+builder.Services.AddSingleton(new RabbitMqPublisher(rabbitHost, queueName));
+
+// notification services
 builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
 builder.Services.AddScoped<INotificationService, NotificationService>();
 
-// registers the reminder background service, runs automatically once app starts
+// background services
 builder.Services.AddHostedService<ReminderBackgroundService>();
+builder.Services.AddHostedService(sp =>
+    new EmailConsumerBackgroundService(rabbitHost, queueName, sp.GetRequiredService<EmailSender>()));
 
 
 // register helpers
