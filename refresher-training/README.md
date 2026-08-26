@@ -467,3 +467,27 @@ Added a Reminder system to Notes and a Notification module that runs automatical
 - ✅ Registered `ReminderBackgroundService` via `AddHostedService` in `Program.cs`
 - ✅ Installed `Microsoft.Extensions.Hosting.Abstractions` package for BackgroundService support
 
+
+# Day 18 – Fundoo Notes App: Redis Token Caching + Security Hardening
+
+## 📖 Topics Covered
+- REST API Security principles
+- Encryption & Decryption (AES), Hashing Algorithms 
+- Caching with Redis for token/session management
+
+## 🛠️ Practical Implementation
+Added Redis-based token caching so JWT tokens can be invalidated on logout (session enforcement), and hardened the backend with core REST API security practices — consolidating and securing the full Fundoo Notes App.
+
+### Project Structure
+- **BusinessLayer** – `Helper/RedisCacheHelper.cs`, `Helper/AesEncryptionHelper.cs`, `Service/UserService.cs` updated with cache-based Login/Logout
+- **API** – `Middleware/TokenValidationMiddleware.cs`, `UserController` updated with Logout endpoint
+
+### Tasks Completed
+- ✅ Ran Redis via Docker, installed `StackExchange.Redis` package
+- ✅ Built `RedisCacheHelper` with SetToken, GetToken, RemoveToken, Exists methods
+- ✅ Updated `Login` to cache the JWT token against `userId` with matching 2-hour expiry
+- ✅ Added `Logout` endpoint that removes the cached token
+- ✅ Built `TokenValidationMiddleware` that checks incoming JWT against Redis cache on every authenticated request — rejects requests with a valid-but-logged-out token
+- ✅ Reviewed and applied REST API security principles: HTTPS enforcement, restricted CORS, rate limiting setup on sensitive endpoints, hiding stack traces outside Development
+
+
